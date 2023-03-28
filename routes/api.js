@@ -27,6 +27,7 @@ router.post('/post', async(req, res)=>{
         idproof:req.body.idproof
     })
 
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:4200');
     const a1 = await apip.save()
          res.json(a1)
     // try {
