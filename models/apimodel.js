@@ -6,10 +6,31 @@ const apischema = new mongoose.Schema({
         type: String,
         required: true
     },
-    city:{
+    mob:{
+        type: Number,
+        required: true
+    },
+    place:{
         type: String,
         required: true
-    }
+    },
+    state:{
+        type: String,
+        required: true
+    },
+    indate:{
+        type: Date,
+        required: true
+    },
+    outdate:{
+        type: Date,
+        required: true
+    },
+    idproof:{
+        type: String,
+        required: true
+    },
+
 })
 
 
