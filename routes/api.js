@@ -9,6 +9,7 @@ router.get('/get', async (req, res) => {
         res.json(api)
     }
     catch (err) {
+    
         res.send(`Error: ` + err)
     }
 
@@ -18,7 +19,12 @@ router.get('/get', async (req, res) => {
 router.post('/post', async(req, res)=>{
     const apip = new apimodels({
         name:req.body.name,
-        city:req.body.city
+        mob:req.body.mob,
+        place:req.body.place,
+        state:req.body.state,
+        indate:req.body.indate,
+        outdate:req.body.outdate,
+        idproof:req.body.idproof
     })
 
     const a1 = await apip.save()
